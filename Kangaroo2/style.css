@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1C658C;
+    font-size: 2vw;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+.game-board {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 30vw;
+    background-color: #EEEEEE;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 1);
+    overflow: hidden;
+    filter: none;
+    margin: 0.5vw 0;
+}
+
+.instruction {
+    display: flex;
+}
+
+.instruction h1 {
+    opacity: 0.3;
+    font-size: 2vw;
+}
+
+.game-over {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    background-color: #D8D2CB;
+    width: 40vw;
+    height: 17vw;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.game-over h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.game-over p {
+    margin: 0;
+    margin-bottom: 2vw;
+    font-size: 0.7em;
+}
+
+.game-over button {
+    width: 20%;
+    height: 15%;
+    font-size: 0.7em;
+    background-color: #398AB9;
+    border: none;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    color: white;
+}
+
+.game-over button:active {
+    transform: scale(0.95);
+}
+
+.score {
+    display: flex;
+    position: absolute;
+    right: 5%;
+    top: 8%;
+    font-size: 1em;
+}
+
+.score h2 {
+    margin: 0;
+}
+
+.score p {
+    margin: 0;
+    text-align: right;
+    font-size: 1.5vw;
+}
+
+.score p span {
+    font-size: 2vw;
+}
+
+.character {
+    position: absolute;
+    right: 80%;
+    bottom:0;
+    width: 10%;
+    height: 25%;
+}
+
+.character img {
+    width: 100%;
+}
+
+.obstacle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #323232;
+    height: 20%;
+    width: 4%;
+}
+
